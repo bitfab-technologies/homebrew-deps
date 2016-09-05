@@ -15,7 +15,7 @@ class Gtest <Formula
   end
 
   def install
-    system "/usr/local/Cellar/libtool/2.4.6_1/bin/glibtoolize", "--force"
+    system "glibtoolize", "--force"
     system "aclocal"
     system "autoheader"
     system "automake", "--force-missing", "--add-missing"
