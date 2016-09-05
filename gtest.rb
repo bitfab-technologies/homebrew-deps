@@ -4,7 +4,7 @@ class Gtest <Formula
   skip_clean "lib"
   url 'https://github.com/google/googletest/archive/release-1.7.0.tar.gz'
   homepage 'https://github.com/google/googletest'
-  sha256 '151cbb2a1099918add5fad2ec8bd44dfa9964a636417ab03468a13d2d0be1e8d'
+  sha256 'f73a6546fdf9fce9ff93a5015e0333a8af3062a152a9ad6bcb772c96687016cc'
 
   def patches
     # This is necessary to get gtest to function wtih libc++
