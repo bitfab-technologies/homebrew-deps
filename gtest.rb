@@ -2,9 +2,9 @@ require 'formula'
 
 class Gtest <Formula
   skip_clean "lib"
-  url 'http://googletest.googlecode.com/files/gtest-1.7.0.zip'
-  homepage 'http://code.google.com/p/googletest/'
-  sha256 '247ca18dd83f53deb1328be17e4b1be31514cedfc1e3424f672bf11fd7e0d60d'
+  url 'https://github.com/google/googletest/archive/release-1.7.0.tar.gz'
+  homepage 'https://github.com/google/googletest'
+  sha256 '151cbb2a1099918add5fad2ec8bd44dfa9964a636417ab03468a13d2d0be1e8d'
 
   def patches
     # This is necessary to get gtest to function wtih libc++
