@@ -18,7 +18,7 @@ class Gtest <Formula
     system "/usr/local/Cellar/libtool/2.4.6_1/bin/glibtoolize", "--force"
     system "aclocal"
     system "autoheader"
-    system "automake --force-missing --add-missing"
+    system "automake", "--force-missing", "--add-missing"
     system "autoconf"
     system "./configure", "CPPFLAGS=-DGTEST_HAS_TR1_TUPLE=0", "--prefix=#{prefix}", "--disable-dependency-tracking"
     inreplace 'scripts/gtest-config', '`dirname $0`', '$bindir'
