@@ -2,6 +2,8 @@ require 'formula'
 
 class Gtest <Formula
   depends_on "libtool"
+  depends_on "autoconf"
+  depends_on "automake"
   skip_clean "lib"
   url 'https://github.com/google/googletest/archive/release-1.7.0.tar.gz'
   homepage 'https://github.com/google/googletest'
@@ -16,7 +18,6 @@ class Gtest <Formula
 
   def install
     system "glibtoolize", "--force"
-    system "aclocal"
     system "autoheader"
     system "automake", "--force-missing", "--add-missing"
     system "autoconf"
